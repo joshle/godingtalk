@@ -97,7 +97,7 @@ func NewDingTalkClient(corpID string, corpSecret string) *DingTalkClient {
 	c.CorpID = corpID
 	c.CorpSecret = corpSecret
 	c.HTTPClient = &http.Client{
-		Timeout: 10 * time.Second,
+		Timeout: 180 * time.Second,
 	}
 	c.Cache = NewFileCache(".auth_file")
 	return c
