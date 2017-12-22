@@ -22,6 +22,7 @@ type User struct {
     Department []int
     Position string
     Email string
+    OrgEmail string
     Avatar string
     Extattr interface{}
 }
