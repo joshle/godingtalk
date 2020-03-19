@@ -24,6 +24,11 @@ type User struct {
 	Email      string
 	OrgEmail   string
 	Avatar     string
+	Unionid    string `json:"unionid"`
+	Jobnumber  string `json:"jobnumber"`
+	HiredDate  int64  `json:"hiredDate"`
+	WorkPlace  string `json:"workPlace"`
+	StateCode  string `json:"stateCode"`
 	Extattr    interface{}
 }
 
