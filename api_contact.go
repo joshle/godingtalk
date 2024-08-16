@@ -23,6 +23,13 @@ type User struct {
 	OrgEmail   string
 	Avatar     string
 	Extattr    interface{}
+	IsSys      bool `json:"is_sys"`
+	SysLevel   int  `json:"sys_level"`
+	Unionid    string `json:"unionid"`
+	Jobnumber  string `json:"jobnumber"`
+	HiredDate  int64  `json:"hiredDate"`
+	WorkPlace  string `json:"workPlace"`
+	StateCode  string `json:"stateCode"`
 }
 
 type UserList struct {
